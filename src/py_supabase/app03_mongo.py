@@ -179,10 +179,10 @@ def edit_dialog(todo: dict) -> None:
         saved = st.form_submit_button("Save changes", type="primary", use_container_width=True)
 
     if saved:
-        if not title.strip():
+        if title is None or not title.strip():
             st.error("A task needs a title.")
             return
-        db.update_todo(str(todo["_id"]), title, description, priority, category, due)
+        db.update_todo(str(todo["_id"]), title, description or "", priority, category or "", due)
         flash("Changes saved")
         st.rerun()
 
