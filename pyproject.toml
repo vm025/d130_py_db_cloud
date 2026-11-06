@@ -1,0 +1,24 @@
+[project]
+name = "py-supabase"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vmu", email = "vmurthy025@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "bson>=0.5.10",
+    "pandas>=3.1.1",
+    "pymongo>=4.19.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+    "supabase>=2.34.0",
+]
+
+[project.scripts]
+py-supabase = "py_supabase:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"

@@ -1,0 +1,12 @@
+you are an expert in python & database (especially nosql).
+can you develop a todos app, using python, streamlit & mongodb (cloud).
+
+ the url for the mongodb is:  mongodb+srv://<db_username>:<db_password>@cluster0.hte6gm5.mongodb.net/
+
+ Note:
+1) the UI should be attractive & use balanced & toned colours.
+2) the app should support all CRUD operations.
+3) For each such operation, make the code nicely structured & commented.
+4) The db's password is present in the secrets.toml file of streamlit.
+5) the app should be responsive in design.
+
