@@ -64,4 +64,10 @@ But, when this app is run locally, it exppects "bson" module,
 
 And,  when deployed on streamlit cloud: ImportError: cannot import name 'SON' from 'bson'.
 -- uv remove bson pymongo;  uv add pymongo
-   note: dnspython is included by default in pymongo. so need need for "pymongo[srv]".
+   note: dnspython is included by default in pymongo. so NO  need for "pymongo[srv]".
+
+----------
+deployed:  https://pydbcloud-d130.streamlit.app/
+-- Network access of mongo atlas needs to be set to 0:0:0:0/0, since streamlit 
+container ip address keeps changing.
+

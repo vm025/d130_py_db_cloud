@@ -32,7 +32,7 @@ from typing import Optional
 from urllib.parse import quote_plus
 
 import streamlit as st
-from bson import ObjectId
+# from bson import ObjectId  ===> not reqd anymore since pymongo 4.x, ObjectId is now in pymongo package.
 from pymongo import ASCENDING, DESCENDING, MongoClient
 
 # --------------------------------------------------------------------------
