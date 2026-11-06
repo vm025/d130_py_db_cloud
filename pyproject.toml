@@ -8,7 +8,6 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "bson>=0.5.10",
     "pandas>=3.1.1",
     "pymongo>=4.19.0",
     "python-dotenv>=1.2.4",
